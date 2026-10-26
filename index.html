@@ -23,7 +23,7 @@
       <div class="card"><h2>Hitung targetmu</h2><p class="sub">Pilih item tujuan dan masukkan earning saat ini.</p>
         <div class="segmented" role="tablist" aria-label="Kategori item"><button type="button" class="active" data-kind="pickaxe" role="tab" aria-selected="true">⛏ Pickaxe</button><button type="button" data-kind="trail" role="tab" aria-selected="false">✦ Trail</button></div>
         <div class="field"><label>Target <span id="kind-label">Pickaxe</span></label><div class="item-picker" id="item-picker" role="group" aria-label="Pilih target"></div><div class="target-info" id="target-info"></div></div>
-        <div class="field"><label for="earning">Earning kamu</label><div class="input-row"><input id="earning" inputmode="decimal" autocomplete="off" placeholder="Contoh: 1T atau 1000000000000" aria-label="Earning per detik"><span class="unit">/ detik</span></div><div class="helper">Bisa pakai angka biasa atau suffix K, M, B, T, Qa, Qi.</div></div>
+        <div class="field"><label for="earning">Earning kamu</label><div class="input-row"><input id="earning" type="text" inputmode="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Contoh: 1T, 1Qa, atau 1Qi" aria-label="Earning per detik"><span class="unit">/ detik</span></div><div class="helper">Bisa pakai angka biasa atau suffix K, M, B, T, Qa, Qi.</div></div>
         <button class="primary" id="calculate">Hitung estimasi <span aria-hidden="true">→</span></button><p class="error" id="error" role="alert"></p>
       </div>
       <div class="card result-card" aria-live="polite"><h2>Estimasi waktumu</h2><p class="sub">Perkiraan waktu untuk mencapai targetmu.</p>
@@ -64,6 +64,7 @@
 </script>
 </body>
 </html>
+
 
 
 
